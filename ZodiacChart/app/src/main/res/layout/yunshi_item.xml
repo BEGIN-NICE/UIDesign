@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/yunshi_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/calendar_icon_top_guiren" />
+
+            <TextView
+                android:id="@+id/yunshi_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/yunshi_image"
+                android:text="@string/yunshi_love"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp" />
+
+            <RatingBar
+                android:id="@+id/yunshi_stars"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/yunshi_title"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="4"
+                android:theme="@style/RatingBar" />
+
+            <TextView
+                android:id="@+id/fen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/yunshi_score"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="3dp"
+                android:text="@string/fen"
+                android:textColor="@color/colorGray"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/yunshi_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/fen"
+                android:text="@string/yunshi_love_score"
+                android:textColor="@color/colorOrange"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/yunshi_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/yunshi_love_describe"
+        android:textSize="13dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorLine" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/yunshi_treasure_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/calendar_icon_top_guiren" />
+
+        <TextView
+            android:id="@+id/yunshi_treasure_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/yunshi_treasure_image"
+            android:text="@string/yunshi_treasure"
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp" />
+
+        <RatingBar
+            android:id="@+id/yunshi_treasure_stars"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/yunshi_treasure_title"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="4.5"
+            android:theme="@style/RatingBar" />
+
+        <TextView
+            android:id="@+id/treasure_fen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/yunshi_treasure_score"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="3dp"
+            android:text="@string/fen"
+            android:textColor="@color/colorGray"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/yunshi_treasure_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/treasure_fen"
+            android:text="@string/yunshi_treasure_score"
+            android:textColor="@color/colorOrange"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/yunshi_treasure_describe"
+        android:textSize="13dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorLine" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/yunshi_cause_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/calendar_icon_top_guiren" />
+
+        <TextView
+            android:id="@+id/yunshi_cause_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/yunshi_cause_image"
+            android:text="@string/yunshi_cause"
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp" />
+
+        <RatingBar
+            android:id="@+id/yunshi_cause_stars"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/yunshi_cause_title"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="3.5"
+            android:theme="@style/RatingBar" />
+
+        <TextView
+            android:id="@+id/cause_fen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/yunshi_cause_score"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="3dp"
+            android:text="@string/fen"
+            android:textColor="@color/colorGray"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/yunshi_cause_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/cause_fen"
+            android:text="@string/yunshi_cause_score"
+            android:textColor="@color/colorOrange"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/yunshi_cause_describe"
+        android:textSize="13dp" />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">ZodiacChart</string>
+    <string name="huangli_title">黄历运势</string>
+    <string name="title_date">2017年2月21日</string>
+    <string name="user_name">姓名字</string>
+    <string name="personal_information">编辑个人信息</string>
+    <string name="today_describe_left">今日运势得分</string>
+    <string name="today_score">89</string>
+    <string name="fen">分</string>
+    <string name="caishen">财神方位:</string>
+    <string name="caishen_right">正南</string>
+    <string name="guiren">贵人方位:</string>
+    <string name="guiren_right">正南</string>
+    <string name="wenchang">文昌方位:</string>
+    <string name="wenchang_right">正东</string>
+    <string name="jixiang_number">吉祥数字:</string>
+    <string name="jixiang_number_right">4、6</string>
+    <string name="jixiang_color">吉祥颜色:</string>
+    <string name="jixiang_color_right">紫罗兰</string>
+    <string name="guirenshengxiao">贵人生肖:</string>
+    <string name="guirenshengxiao_right">猴</string>
+
+    <string name="yunshi_love">爱情运势</string>
+    <string name="yunshi_love_score">82</string>
+    <string name="yunshi_love_describe">恋爱中的人多与恋人到热闹有趣的地方玩，可以让爱情升温；单身者多外出可有不错的际遇。</string>
+
+    <string name="yunshi_treasure">财富运势</string>
+    <string name="yunshi_treasure_score">90</string>
+    <string name="yunshi_treasure_describe">现实物质是今日的生活重心，满脑子想赚钱也会想花钱，只要保守谨慎不要冲动，不投机，不会有太大的困难。</string>
+
+    <string name="yunshi_cause">事业运势</string>
+    <string name="yunshi_cause_score">75</string>
+    <string name="yunshi_cause_describe">追求的欲望异常强烈，过于重视得失，易使你产生愤世嫉俗的情绪，不知审视改正自己做的不足的地方。</string>
+
+    <string name="tao_hua_yun_title">本周有桃花运</string>
+    <string name="week_date">本周(3月5日-3月11日)</string>
+    <string name="tao_hua_yun">异性缘很不错，但是注意不要玩暧昧，在另一半面前要注意自己情绪不要把坏情绪发泄到对方身上。</string>
+</resources>
