@@ -16,7 +16,6 @@
     <style name="style1">
         <item name="android:textSize">30dp</item>
         <item name="android:textColor">@color/colorOrange</item>
-        <item name="android:textStyle">italic</item>
     </style>
 
     <style name="style2">
@@ -24,8 +23,16 @@
         <item name="android:textColor">@color/colorBlack</item>
     </style>
 
-    <style name="RatingBar" parent="@android:style/Widget.Holo.RatingBar.Indicator">
+    <style name="RatingBar" parent="Base.Widget.AppCompat.ActionBar">
+        <item name="android:progressDrawable">@drawable/designratingbar</item>
+        <item name="android:maxHeight">18dp</item>
+        <item name="android:minHeight">18dp</item>
+    </style>
+
+<!--    <style name="RatingBar" parent="@android:style/Widget.Holo.RatingBar.Indicator">
         <item name="colorControlNormal">@color/colorGray</item>
         <item name="colorControlActivated">@color/colorOrange</item>
-    </style>
+        <item name="android:progressDrawable">@drawable/designratingbar</item>
+    </style>-->
+
 </resources>

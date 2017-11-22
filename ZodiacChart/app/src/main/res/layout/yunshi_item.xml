@@ -36,16 +36,15 @@
 
             <RatingBar
                 android:id="@+id/yunshi_stars"
-                style="?android:attr/ratingBarStyleSmall"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="14dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@+id/yunshi_title"
                 android:isIndicator="true"
                 android:numStars="5"
                 android:rating="4"
-                android:theme="@style/RatingBar" />
+                style="@style/RatingBar" />
 
             <TextView
                 android:id="@+id/fen"
@@ -78,7 +77,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:text="@string/yunshi_love_describe"
-        android:textSize="13dp" />
+        android:textSize="13dp"
+        android:lineSpacingExtra="3dp"/>
 
     <View
         android:layout_width="match_parent"
@@ -115,16 +115,15 @@
 
         <RatingBar
             android:id="@+id/yunshi_treasure_stars"
-            style="?android:attr/ratingBarStyleSmall"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="14dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/yunshi_treasure_title"
-            android:isIndicator="true"
+            android:isIndicator="false"
             android:numStars="5"
             android:rating="4.5"
-            android:theme="@style/RatingBar" />
+            style="@style/RatingBar" />
 
         <TextView
             android:id="@+id/treasure_fen"
@@ -155,7 +154,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:text="@string/yunshi_treasure_describe"
-        android:textSize="13dp" />
+        android:textSize="13dp"
+        android:lineSpacingExtra="3dp"/>
 
     <View
         android:layout_width="match_parent"
@@ -192,16 +192,15 @@
 
         <RatingBar
             android:id="@+id/yunshi_cause_stars"
-            style="?android:attr/ratingBarStyleSmall"
+            style="@style/RatingBar"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="14dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/yunshi_cause_title"
             android:isIndicator="true"
             android:numStars="5"
-            android:rating="3.5"
-            android:theme="@style/RatingBar" />
+            android:rating="3.5"/>
 
         <TextView
             android:id="@+id/cause_fen"
@@ -232,6 +231,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:text="@string/yunshi_cause_describe"
-        android:textSize="13dp" />
+        android:textSize="13dp"
+        android:lineSpacingExtra="3dp"/>
 
 </LinearLayout>

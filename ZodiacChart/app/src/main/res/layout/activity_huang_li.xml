@@ -15,7 +15,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:src="@drawable/ic_top_back"/>
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/common_navbar_back_normal"/>
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
@@ -33,16 +34,16 @@
             android:layout_centerHorizontal="true"
             android:text="@string/title_date"
             android:textSize="13dp"
-            android:textColor="@color/colorWhite"/>
+            android:textColor="#FBD4CB"/>
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="13dp">
+        android:layout_margin="10dp">
         <View
             android:layout_width="3dp"
-            android:layout_height="25dp"
+            android:layout_height="17dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="2dp"
             android:background="@color/colorOrange"/>
@@ -63,10 +64,10 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:text="@string/personal_information"
-            android:textSize="13dp"/>
+            android:textSize="10dp"/>
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@id/personal_information"
             android:layout_marginRight="10dp"

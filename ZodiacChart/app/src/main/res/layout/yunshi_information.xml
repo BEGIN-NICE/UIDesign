@@ -13,20 +13,34 @@
         android:background="@drawable/calendar_fortune_bg">
 
         <ImageView
+            android:id="@+id/dash_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/fortune_dash_line"/>
+
+<RelativeLayout
+    android:id="@+id/caishen_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="13dp">
+        <ImageView
             android:id="@+id/gem"
             android:layout_width="16dp"
             android:layout_height="16dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="13dp"
-            android:src="@drawable/calendar_icon_top_guiren_mdpi" />
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/fortune_lucky_icon_money" />
 
         <TextView
             android:id="@+id/caishen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="13dp"
             android:layout_toRightOf="@+id/gem"
+            android:layout_centerVertical="true"
             android:text="@string/caishen"
             android:textColor="@color/colorBlack"
             android:textSize="13dp" />
@@ -36,28 +50,34 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="9dp"
-            android:layout_marginTop="11dp"
+            android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/caishen"
             android:text="@string/caishen_right"
             android:textColor="@color/colorOrange"
             android:textSize="14dp" />
+</RelativeLayout>
 
+<RelativeLayout
+        android:id="@+id/guiren_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caishen_layout"
+        android:layout_alignLeft="@+id/caishen_layout"
+        android:layout_marginTop="12dp">
         <ImageView
             android:id="@+id/guiren_image"
             android:layout_width="16dp"
             android:layout_height="16dp"
-            android:layout_below="@+id/gem"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="12dp"
+            android:layout_centerVertical="true"
             android:src="@drawable/calendar_icon_top_guiren_mdpi" />
 
         <TextView
             android:id="@+id/guiren"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/caishen"
-            android:layout_below="@+id/caishen"
-            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/guiren_image"
+            android:layout_marginLeft="5dp"
             android:text="@string/guiren"
             android:textColor="@color/colorBlack"
             android:textSize="13dp" />
@@ -66,29 +86,35 @@
             android:id="@+id/guiren_right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/caishen_right"
-            android:layout_below="@+id/caishen_right"
-            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/guiren"
+            android:layout_marginLeft="9dp"
             android:text="@string/guiren_right"
             android:textColor="@color/colorOrange"
             android:textSize="14dp" />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guiren_layout"
+        android:layout_alignLeft="@+id/guiren_layout"
+        android:layout_marginTop="12dp">
 
         <ImageView
             android:id="@+id/wenchang_image"
             android:layout_width="16dp"
             android:layout_height="16dp"
-            android:layout_alignRight="@+id/guiren_image"
-            android:layout_below="@+id/guiren_image"
-            android:layout_marginTop="12dp"
+            android:layout_centerVertical="true"
             android:src="@drawable/calendar_icon_top_book_mdpi" />
 
         <TextView
             android:id="@+id/wenchang"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/guiren"
-            android:layout_below="@+id/guiren"
-            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/wenchang_image"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
             android:text="@string/guiren"
             android:textColor="@color/colorBlack"
             android:textSize="13dp" />
@@ -96,29 +122,38 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/guiren_right"
-            android:layout_below="@+id/guiren_right"
-            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/wenchang"
+            android:layout_marginLeft="9dp"
+            android:layout_centerVertical="true"
             android:text="@string/wenchang_right"
             android:textColor="@color/colorOrange"
             android:textSize="14dp" />
+    </RelativeLayout>
 
 
+
+    <RelativeLayout
+        android:id="@+id/jixiang_number_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dash_line"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="20dp">
         <ImageView
             android:id="@+id/jixiang_image"
             android:layout_width="16dp"
             android:layout_height="16dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="13dp"
-            android:src="@drawable/calendar_icon_top_xiao_mdpi" />
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/fortune_lucky_icon_number" />
 
         <TextView
             android:id="@+id/jixiang_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="13dp"
             android:layout_toRightOf="@+id/jixiang_image"
+            android:layout_centerVertical="true"
             android:text="@string/jixiang_number"
             android:textColor="@color/colorBlack"
             android:textSize="13dp" />
@@ -128,28 +163,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="9dp"
-            android:layout_marginTop="13dp"
             android:layout_toRightOf="@+id/jixiang_number"
+            android:layout_centerVertical="true"
             android:text="@string/jixiang_number_right"
             android:textColor="@color/colorOrange"
             android:textSize="14dp" />
+    </RelativeLayout>
 
+
+    <RelativeLayout
+        android:id="@+id/jixiang_color_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jixiang_number_layout"
+        android:layout_alignLeft="@+id/jixiang_number_layout"
+        android:layout_marginTop="12dp">
         <ImageView
             android:id="@+id/jixiangcolor_image"
             android:layout_width="16dp"
             android:layout_height="16dp"
-            android:layout_alignRight="@+id/jixiang_image"
-            android:layout_below="@+id/jixiang_image"
-            android:layout_marginTop="12dp"
-            android:src="@drawable/calendar_icon_top_xiao_mdpi" />
-
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/calendar_icon_top_xiao"/>
         <TextView
             android:id="@+id/jixiang_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/jixiang_number"
-            android:layout_below="@+id/jixiang_number"
-            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/jixiangcolor_image"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
             android:text="@string/jixiang_color"
             android:textColor="@color/colorBlack"
             android:textSize="13dp" />
@@ -158,30 +200,37 @@
             android:id="@+id/jixiang_color_right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/jixiang_number_right"
-            android:layout_below="@+id/jixiang_number_right"
-            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/jixiang_color"
+            android:layout_marginLeft="9dp"
             android:text="@string/jixiang_color_right"
             android:textColor="@color/colorOrange"
             android:textSize="14dp" />
+    </RelativeLayout>
 
+
+    <RelativeLayout
+        android:id="@+id/guirenshengxiao_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jixiang_color_layout"
+        android:layout_alignLeft="@+id/jixiang_color_layout"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="13dp">
         <ImageView
             android:id="@+id/guirenshengxiao_image"
             android:layout_width="16dp"
             android:layout_height="16dp"
-            android:layout_alignRight="@+id/jixiangcolor_image"
-            android:layout_below="@+id/jixiangcolor_image"
-            android:layout_marginBottom="13dp"
-            android:layout_marginTop="12dp"
-            android:src="@drawable/calendar_icon_top_xiao_mdpi" />
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/calendar_icon_top_xiao" />
 
         <TextView
             android:id="@+id/guirenshengxiao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/jixiang_color"
-            android:layout_below="@+id/jixiang_color"
-            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/guirenshengxiao_image"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
             android:text="@string/guirenshengxiao"
             android:textColor="@color/colorBlack"
             android:textSize="13dp" />
@@ -190,17 +239,26 @@
             android:id="@+id/jixiangshengxiao_right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/jixiang_color_right"
-            android:layout_below="@+id/jixiang_color_right"
-            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/guirenshengxiao"
+            android:layout_marginLeft="9dp"
+            android:layout_centerVertical="true"
             android:text="@string/guirenshengxiao_right"
             android:textColor="@color/colorOrange"
             android:textSize="14dp" />
     </RelativeLayout>
+    </RelativeLayout>
 
     <View
         android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"/>
+    <View
+        android:layout_width="match_parent"
         android:layout_height="10dp"
-        android:background="@color/colorLine" />
+        android:background="@color/colorInterval" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"/>
 
 </LinearLayout>

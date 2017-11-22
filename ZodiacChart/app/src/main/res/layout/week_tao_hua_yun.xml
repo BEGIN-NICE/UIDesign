@@ -3,11 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"/>
     <View
         android:layout_width="match_parent"
         android:layout_height="10dp"
-        android:background="@color/colorLine" />
+        android:background="@color/colorInterval" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -29,7 +36,7 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="5dp"
             android:layout_toLeftOf="@+id/tao_hua_yun_title"
-            android:src="@drawable/calendar_img_top_left" />
+            android:src="@drawable/fortune_week_img_left" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -37,7 +44,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="5dp"
             android:layout_toRightOf="@+id/tao_hua_yun_title"
-            android:src="@drawable/calendar_img_top_right" />
+            android:src="@drawable/fortune_week_img_right" />
     </RelativeLayout>
 
     <LinearLayout
@@ -51,7 +58,8 @@
             android:id="@+id/tao_hua_yun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:lineSpacingExtra="3dp"
+            android:layout_margin="15dp"
             android:textSize="13dp" />
     </LinearLayout>
 
