@@ -45,14 +45,14 @@
             android:layout_marginLeft="5dp"
             android:layout_toRightOf="@+id/tao_hua_yun_title"
             android:src="@drawable/fortune_week_img_right" />
+
     </RelativeLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:background="@drawable/calendar_fortune_bg"
-        android:orientation="horizontal">
+        android:background="@drawable/calendar_fortune_bg">
 
         <TextView
             android:id="@+id/tao_hua_yun"
@@ -61,6 +61,6 @@
             android:lineSpacingExtra="3dp"
             android:layout_margin="15dp"
             android:textSize="13dp" />
-    </LinearLayout>
+    </RelativeLayout>
 
 </LinearLayout>

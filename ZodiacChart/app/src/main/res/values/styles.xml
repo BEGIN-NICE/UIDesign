@@ -21,6 +21,7 @@
     <style name="style2">
         <item name="android:textSize">13dp</item>
         <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:typeface">normal</item>
     </style>
 
     <style name="RatingBar" parent="Base.Widget.AppCompat.ActionBar">

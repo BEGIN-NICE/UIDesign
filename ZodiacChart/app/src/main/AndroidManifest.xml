@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HuangLiActivity"></activity>
+        <activity android:name=".HuangLiActivity" />
+        <activity android:name=".HoroscopeActivity"></activity>
     </application>
 
 </manifest>

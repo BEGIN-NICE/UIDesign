@@ -35,4 +35,54 @@
     <string name="tao_hua_yun_title">本周有桃花运</string>
     <string name="week_date">本周(3月5日-3月11日)</string>
     <string name="tao_hua_yun">异性缘很不错，但是注意不要玩暧昧，在另一半面前要注意自己情绪不要把坏情绪发泄到对方身上。</string>
+
+
+    <string name="horoscope_title">2017年03月21日</string>
+    <string name="horoscope_lunar_date">农历冬月廿八</string>
+    <string name="horoscope_lunar_time">丁酉[鸡年] 葵卯月 葵丑日 星期五</string>
+    <string name="horoscope_yi_things">开业  求财  交易  置业  造庙  会亲友  祈福  祭祀  开光  安床</string>
+    <string name="horoscope_ji_things">上梁 开仓 盖屋 造船 嫁娶 掘井</string>
+    <string name="horoscope_yi_ji">时辰宜忌</string>
+    <string name="horoscope_yi_ji_detail">查看详情 ></string>
+    <string name="horoscope_jia">甲子吉</string>
+    <string name="horoscope_yi">乙丑凶</string>
+    <string name="horoscope_bing">丙寅吉</string>
+    <string name="horoscope_ding">丁卯吉</string>
+    <string name="horoscope_wuchen">戊辰凶</string>
+    <string name="horoscope_ji">己巳凶</string>
+    <string name="horoscope_geng">庚午吉</string>
+    <string name="horoscope_xin">辛未吉</string>
+    <string name="horoscope_ren">壬申凶</string>
+    <string name="horoscope_xin_right">辛未吉</string>
+    <string name="horoscope_jia_right">甲戊凶</string>
+    <string name="horoscope_yi_right">乙亥凶</string>
+
+
+
+
+    <string name="horoscope_gods">诸神方位</string>
+    <string name="horoscope_cai">财神-正西</string>
+    <string name="horoscope_fu">福神-正南</string>
+    <string name="horoscope_xi">喜神-正东</string>
+    <string name="horoscope_sheng">生门-东南</string>
+
+    <string name="horoscope_zhi">值神</string>
+    <string name="zhi_information">天刑</string>
+    <string name="horoscope_chong">冲煞</string>
+    <string name="chong_information">蛇日冲猪 煞南</string>
+    <string name="horoscope_wu">五行</string>
+    <string name="wu_information">杨柳木</string>
+    <string name="horoscope_tai">胎神</string>
+    <string name="tai_information">占房床房内北</string>
+    <string name="horoscope_peng">彭祖百忌</string>
+    <string name="peng_information">己不破券二比并亡酉不宴客醉坐癫狂</string>
+    <string name="horoscope_xing">星宿</string>
+    <string name="xing_information">东方萁水豹吉</string>
+
+
+
+
+
+
+
 </resources>
