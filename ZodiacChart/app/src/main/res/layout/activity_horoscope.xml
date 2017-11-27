@@ -8,8 +8,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/colorOrange">
+        android:layout_height="45dp"
+        android:background="@drawable/bg_title">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -17,8 +17,8 @@
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"
-            android:clickable="true"
-            android:background="@drawable/back_selector"/>
+            android:background="@drawable/back_selector"
+            android:clickable="true" />
 
         <TextView
             android:id="@+id/horoscope_date"
@@ -44,8 +44,8 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="15dp"
-            android:clickable="true"
             android:background="@drawable/today_selector"
+            android:clickable="true"
             android:src="@drawable/main_icon_today" />
     </RelativeLayout>
 
@@ -84,7 +84,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/lunar_date"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="10dp"
             android:text="@string/horoscope_lunar_time"
             android:textColor="@color/colorWeek"
             android:textSize="13dp" />
@@ -109,9 +109,37 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="12dp"
-                android:clickable="true"
-                android:background="@drawable/lucky_day_selector"/>
+                android:background="@drawable/lucky_day_selector"
+                android:clickable="true" />
 
+            <!--            <TextView
+                            android:id="@+id/yi_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_toLeftOf="@id/icon_lucky_day"
+                            android:drawableLeft="@drawable/calendar_icon_yi"
+                            android:drawablePadding="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:lineSpacingExtra="2dp"
+                            android:text="@string/horoscope_yi_things"
+                            android:textColor="@color/colorYi"
+                            android:textSize="13dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@id/icon_lucky_day"
+                            android:layout_below="@+id/yi_layout"
+                            android:layout_marginTop="9dp"
+                            android:drawableLeft="@drawable/calendar_icon_ji"
+                            android:drawablePadding="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:lineSpacingExtra="2dp"
+                            android:text="@string/horoscope_ji_things"
+                            android:textColor="@color/colorJi"
+                            android:textSize="13dp" />-->
             <RelativeLayout
                 android:id="@+id/yi_layout"
                 android:layout_width="wrap_content"
@@ -176,8 +204,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="102dp"
-            android:clickable="true"
-            android:background="@drawable/bg_selector">
+            android:background="@drawable/bg_selector"
+            android:clickable="true">
 
             <TextView
                 android:id="@+id/time_yi_ji"
@@ -234,14 +262,15 @@
                     android:gravity="center"
                     android:text="@string/horoscope_bing"
                     android:textColor="@color/colorWeek"
-                    android:textSize="13dp"/>
+                    android:textSize="13dp" />
+
                 <View
                     android:layout_width="0.5dp"
                     android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginLeft="3dp"
                     android:layout_marginRight="3dp"
-                    android:layout_gravity="center_vertical"
-                    android:background="@color/colorTimeLine"/>
+                    android:background="@color/colorTimeLine" />
 
                 <TextView
                     android:id="@+id/ding"
@@ -251,7 +280,7 @@
                     android:gravity="center"
                     android:text="@string/horoscope_ding"
                     android:textColor="@color/colorWeek"
-                    android:textSize="13dp"/>
+                    android:textSize="13dp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -260,7 +289,7 @@
                     android:gravity="center"
                     android:text="@string/horoscope_wuchen"
                     android:textColor="@color/colorWeek"
-                    android:textSize="13dp"/>
+                    android:textSize="13dp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -270,19 +299,20 @@
                     android:text="@string/horoscope_ji"
                     android:textColor="@color/colorWeek"
                     android:textSize="13dp" />
+
                 <View
                     android:layout_width="0.5dp"
                     android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginLeft="3dp"
                     android:layout_marginRight="3dp"
-                    android:layout_gravity="center_vertical"
-                    android:background="@color/colorTimeLine"/>
+                    android:background="@color/colorTimeLine" />
 
                 <TextView
-                    android:layout_marginRight="0.5dp"
-                    android:layout_marginLeft="0.5dp"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginRight="0.5dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/horoscope_geng"
@@ -306,13 +336,14 @@
                     android:text="@string/horoscope_ren"
                     android:textColor="@color/colorWeek"
                     android:textSize="13dp" />
+
                 <View
                     android:layout_width="0.5dp"
                     android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginLeft="3dp"
                     android:layout_marginRight="3dp"
-                    android:layout_gravity="center_vertical"
-                    android:background="@color/colorTimeLine"/>
+                    android:background="@color/colorTimeLine" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -347,284 +378,312 @@
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:background="@color/colorHoroscopeLine" />
-        <RelativeLayout
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="67dp">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/gods_orientation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="11dp"
-                android:text="@string/horoscope_gods"
-                android:textColor="@color/colorYiJi"
-                android:textSize="14dp" />
-
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_below="@+id/gods_orientation"
-                android:layout_marginTop="7dp"
-                android:layout_marginBottom="11dp"
-                android:orientation="horizontal">
+                android:layout_height="67dp">
+
                 <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/horoscope_cai"
-                    android:textColor="@color/colorFour"
-                    android:textSize="14dp" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/horoscope_fu"
-                    android:textColor="@color/colorFour"
-                    android:textSize="14dp" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/horoscope_xi"
-                    android:textColor="@color/colorFour"
-                    android:textSize="14dp" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/horoscope_xi"
-                    android:textColor="@color/colorFour"
+                    android:id="@+id/gods_orientation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="11dp"
+                    android:text="@string/horoscope_gods"
+                    android:textColor="@color/colorYiJi"
                     android:textSize="14dp" />
 
-            </LinearLayout>
-        </RelativeLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:background="@color/colorHoroscopeLine"/>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="65dp">
-            <RelativeLayout
-                android:id="@+id/zhi_layout"
-                android:layout_width="95dp"
-                android:layout_alignParentLeft="true"
-                android:layout_height="match_parent"
-                android:clickable="true"
-                android:background="@drawable/bg_selector">
-                <TextView
-                    android:id="@+id/zhi_god"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="11dp"
-                    android:text="@string/horoscope_zhi"
-                    android:textSize="14dp"
-                    android:textColor="@color/colorYiJi"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_centerHorizontal="true"
-                    android:layout_below="@+id/zhi_god"
-                    android:layout_marginTop="5dp"
-                    android:textSize="13dp"
-                    android:text="@string/zhi_information"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/gods_orientation"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
 
-                    android:textColor="@color/colorFour"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/horoscope_cai"
+                        android:textColor="@color/colorFour"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/horoscope_fu"
+                        android:textColor="@color/colorFour"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/horoscope_xi"
+                        android:textColor="@color/colorFour"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/horoscope_xi"
+                        android:textColor="@color/colorFour"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
             </RelativeLayout>
+
             <View
-                android:layout_width="0.5dp"
-                android:layout_height="match_parent"
-                android:layout_toRightOf="@+id/zhi_layout"
-                android:background="@color/colorHoroscopeLine">
-            </View>
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorHoroscopeLine" />
 
             <RelativeLayout
-                android:id="@+id/wu_layout"
-                android:layout_width="95dp"
-                android:layout_alignParentRight="true"
-                android:layout_height="match_parent"
-                android:clickable="true"
-                android:background="@drawable/bg_selector">
-                <TextView
-                    android:id="@+id/wu_xing"
+                android:layout_width="match_parent"
+                android:layout_height="65dp">
+
+                <RelativeLayout
+                    android:id="@+id/zhi_layout"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/bg_selector"
+                    android:clickable="true">
+
+                    <TextView
+                        android:id="@+id/zhi_god"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="11dp"
+                        android:text="@string/horoscope_zhi"
+                        android:textColor="@color/colorYiJi"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/zhi_god"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/zhi_information"
+                        android:textColor="@color/colorFour"
+
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/zhi_layout"
+                    android:background="@color/colorHoroscopeLine"></View>
+
+                <RelativeLayout
+                    android:id="@+id/wu_layout"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_selector"
+                    android:clickable="true">
+
+                    <TextView
+                        android:id="@+id/wu_xing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="11dp"
+                        android:text="@string/horoscope_wu"
+                        android:textColor="@color/colorYiJi"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/wu_xing"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/wu_information"
+                        android:textColor="@color/colorFour"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/wu_layout"
+                    android:background="@color/colorHoroscopeLine"></View>
+
+                <RelativeLayout
+                    android:id="@+id/chong_layout"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="11dp"
-                    android:text="@string/horoscope_wu"
-                    android:textSize="14dp"
-                    android:textColor="@color/colorYiJi"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_centerHorizontal="true"
-                    android:layout_below="@+id/wu_xing"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/wu_information"
-                    android:textSize="13dp"
-                    android:textColor="@color/colorFour"/>
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/wu_layout"
+                    android:layout_toRightOf="@+id/zhi_layout"
+                    android:background="@drawable/bg_selector"
+                    android:clickable="true">
+
+                    <TextView
+                        android:id="@+id/chong_sha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="11dp"
+                        android:text="@string/horoscope_chong"
+                        android:textColor="@color/colorYiJi"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/chong_sha"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/chong_information"
+                        android:textColor="@color/colorFour"
+                        android:textSize="13dp" />
+                </RelativeLayout>
             </RelativeLayout>
+
             <View
-                android:layout_width="0.5dp"
-                android:layout_height="match_parent"
-                android:layout_toLeftOf="@+id/wu_layout"
-                android:background="@color/colorHoroscopeLine">
-            </View>
-            <RelativeLayout
-                android:id="@+id/chong_layout"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_toLeftOf="@+id/wu_layout"
-                android:layout_toRightOf="@+id/zhi_layout"
-                android:layout_centerInParent="true"
-                android:clickable="true"
-                android:background="@drawable/bg_selector">
-                <TextView
-                    android:id="@+id/chong_sha"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="11dp"
-                    android:text="@string/horoscope_chong"
-                    android:textSize="14dp"
-                    android:textColor="@color/colorYiJi"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_centerHorizontal="true"
-                    android:layout_below="@+id/chong_sha"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/chong_information"
-                    android:textSize="13dp"
-                    android:textColor="@color/colorFour"/>
-            </RelativeLayout>
-        </RelativeLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:background="@color/colorHoroscopeLine"/>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="86dp">
-            <RelativeLayout
-                android:id="@+id/tai_layout"
-                android:layout_width="95dp"
-                android:layout_alignParentLeft="true"
-                android:layout_height="match_parent"
-                android:clickable="true"
-                android:background="@drawable/bg_selector">
-                <TextView
-                    android:id="@+id/tai_god"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="11dp"
-                    android:text="@string/horoscope_tai"
-                    android:textSize="14dp"
-                    android:textColor="@color/colorYiJi"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="18dp"
-                    android:layout_marginRight="18dp"
-                    android:lineSpacingExtra="2dp"
-                    android:gravity="center"
-                    android:layout_centerHorizontal="true"
-                    android:layout_below="@+id/tai_god"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/tai_information"
-                    android:textSize="13dp"
-                    android:textColor="@color/colorFour"/>
-            </RelativeLayout>
-            <View
-                android:layout_width="0.5dp"
-                android:layout_height="match_parent"
-                android:layout_toRightOf="@+id/tai_layout"
-                android:background="@color/colorHoroscopeLine">
-            </View>
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorHoroscopeLine" />
 
             <RelativeLayout
-                android:id="@+id/xing_layout"
-                android:layout_width="95dp"
-                android:layout_alignParentRight="true"
-                android:layout_height="match_parent"
-                android:clickable="true"
-                android:background="@drawable/bg_selector">
-                <TextView
-                    android:id="@+id/xing_xiu"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="11dp"
-                    android:text="@string/horoscope_xing"
-                    android:textSize="14dp"
-                    android:textColor="@color/colorYiJi"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:lineSpacingExtra="2dp"
-                    android:gravity="center"
-                    android:layout_centerHorizontal="true"
-                    android:layout_below="@+id/xing_xiu"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/xing_information"
-                    android:textSize="13dp"
-                    android:textColor="@color/colorFour"/>
-            </RelativeLayout>
-            <View
-                android:layout_width="0.5dp"
-                android:layout_height="match_parent"
-                android:layout_toLeftOf="@+id/xing_layout"
-                android:background="@color/colorHoroscopeLine">
-            </View>
-            <RelativeLayout
-                android:id="@+id/peng_layout"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_toLeftOf="@+id/xing_layout"
-                android:layout_toRightOf="@+id/tai_layout"
-                android:layout_centerInParent="true"
-                android:clickable="true"
-                android:background="@drawable/bg_selector">
-                <TextView
-                    android:id="@+id/peng_zhu"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="11dp"
-                    android:text="@string/horoscope_peng"
-                    android:textSize="14dp"
-                    android:textColor="@color/colorYiJi"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:lineSpacingExtra="2dp"
-                    android:gravity="center"
-                    android:layout_centerHorizontal="true"
-                    android:layout_below="@+id/peng_zhu"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/peng_information"
-                    android:textSize="13dp"
-                    android:textColor="@color/colorFour"/>
-            </RelativeLayout>
-        </RelativeLayout>
+                android:layout_width="match_parent"
+                android:layout_height="86dp">
 
+                <RelativeLayout
+                    android:id="@+id/tai_layout"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/bg_selector"
+                    android:clickable="true">
 
+                    <TextView
+                        android:id="@+id/tai_god"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="11dp"
+                        android:text="@string/horoscope_tai"
+                        android:textColor="@color/colorYiJi"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tai_god"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:lineSpacingExtra="2dp"
+                        android:text="@string/tai_information"
+                        android:textColor="@color/colorFour"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tai_layout"
+                    android:background="@color/colorHoroscopeLine"></View>
+
+                <RelativeLayout
+                    android:id="@+id/xing_layout"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_selector"
+                    android:clickable="true">
+
+                    <TextView
+                        android:id="@+id/xing_xiu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="11dp"
+                        android:text="@string/horoscope_xing"
+                        android:textColor="@color/colorYiJi"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/xing_xiu"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:lineSpacingExtra="2dp"
+                        android:text="@string/xing_information"
+                        android:textColor="@color/colorFour"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/xing_layout"
+                    android:background="@color/colorHoroscopeLine"></View>
+
+                <RelativeLayout
+                    android:id="@+id/peng_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/xing_layout"
+                    android:layout_toRightOf="@+id/tai_layout"
+                    android:background="@drawable/bg_selector"
+                    android:clickable="true">
+
+                    <TextView
+                        android:id="@+id/peng_zhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="11dp"
+                        android:text="@string/horoscope_peng"
+                        android:textColor="@color/colorYiJi"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/peng_zhu"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:lineSpacingExtra="2dp"
+                        android:text="@string/peng_information"
+                        android:textColor="@color/colorFour"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

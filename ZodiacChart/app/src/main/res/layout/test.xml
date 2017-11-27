@@ -4,10 +4,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
+
+    <TextView
+        android:layout_margin="15dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:drawableLeft="@drawable/calendar_icon_ji"
+        android:drawablePadding="5dp"
+        android:text="12345  正南"/>
+
     <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:isIndicator="false"
         android:numStars="5"
         android:rating="2.5"

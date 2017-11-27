@@ -4,12 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:fitsSystemWindows="true"
     tools:context="com.example.fanxh.zodiacchart.HuangLiActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/colorOrange">
+        android:layout_height="45dp"
+        android:background="@drawable/bg_title">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -24,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="2dp"
             android:text="@string/huangli_title"
             android:textColor="@color/colorWhite"
             android:textSize="17dp" />
@@ -50,7 +51,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="35dp">
+                android:layout_height="42dp">
 
                 <View
                     android:id="@+id/user_name_icon"
@@ -105,10 +106,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="3dp"
                     android:text="@string/today_describe_left"
                     android:textColor="@color/colorBlack"
-                    android:textSize="16dp" />
+                    android:textSize="16dp"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -665,7 +666,23 @@
 
             </RelativeLayout>
 
-            <RelativeLayout
+
+
+
+                <TextView
+                    android:id="@+id/tao_hua_yun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:lineSpacingExtra="3dp"
+                    android:padding="15dp"
+                    android:layout_margin="15dp"
+                    android:textSize="13dp"
+                    android:background="@drawable/calendar_fortune_bg"/>
+
+
+
+<!--            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
@@ -678,7 +695,7 @@
                     android:lineSpacingExtra="3dp"
                     android:layout_margin="15dp"
                     android:textSize="13dp" />
-            </RelativeLayout>
+            </RelativeLayout>-->
 
        </LinearLayout>
     </ScrollView>

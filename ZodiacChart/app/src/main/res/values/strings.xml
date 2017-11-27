@@ -40,8 +40,8 @@
     <string name="horoscope_title">2017年03月21日</string>
     <string name="horoscope_lunar_date">农历冬月廿八</string>
     <string name="horoscope_lunar_time">丁酉[鸡年] 葵卯月 葵丑日 星期五</string>
-    <string name="horoscope_yi_things">开业  求财  交易  置业  造庙  会亲友  祈福  祭祀  开光  安床</string>
-    <string name="horoscope_ji_things">上梁 开仓 盖屋 造船 嫁娶 掘井</string>
+    <string name="horoscope_yi_things">开业&#160;&#160;&#160;求财&#160;&#160;&#160;交易&#160;&#160;&#160;置业&#160;&#160;&#160;造庙&#160;&#160;&#160;会亲友&#032;&#032;&#032;祈福&#160;&#160;&#160;祭祀&#160;&#160;&#160;开光&#160;&#160;&#160;安床</string>
+    <string name="horoscope_ji_things">上梁&#160;&#160;&#160;开仓&#160;&#160;&#160;盖屋&#160;&#160;&#160;造船&#160;&#160;&#160;嫁娶&#160;&#160;&#160;掘井</string>
     <string name="horoscope_yi_ji">时辰宜忌</string>
     <string name="horoscope_yi_ji_detail">查看详情 ></string>
     <string name="horoscope_jia">甲子吉</string>

@@ -8,6 +8,8 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
+import com.example.fanxh.zodiacchart.Util.SetStatusBar;
+
 public class HoroscopeActivity extends AppCompatActivity {
     private TextView mGodsOrientation;
     private TextView mLunarDate;
@@ -22,13 +24,14 @@ public class HoroscopeActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.hide();
         }
+        new SetStatusBar(this, R.drawable.bg_notification);
         mGodsOrientation = (TextView) findViewById(R.id.gods_orientation);
         mLunarDate = (TextView) findViewById(R.id.lunar_date);
         mDing = (TextView) findViewById(R.id.ding);
         Typeface typeface = Typeface.createFromAsset(getAssets(), "CalendarSongTi.ttf");
         mGodsOrientation.setTypeface(typeface);
         mLunarDate.setTypeface(typeface);
-        mDing.setBackground(getResources().getDrawable(R.drawable.almanac_bg_luckytime));
+        mDing.setBackgroundResource(R.drawable.almanac_bg_luckytime);
         mDing.setTextColor(getResources().getColor(R.color.colorWhite));
 
     }

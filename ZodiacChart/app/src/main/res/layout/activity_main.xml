@@ -11,13 +11,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:background="@color/colorOrange" />
+        android:background="@color/colorOrange"
+        android:text="one" />
+
     <Button
-    android:id="@+id/second_ui"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/next_activity"
-    android:layout_centerHorizontal="true"
-    android:background="@color/colorOrange" />
+        android:id="@+id/second_ui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/next_activity"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorOrange"
+        android:text="two" />
 
 </RelativeLayout>
