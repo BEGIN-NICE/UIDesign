@@ -1,0 +1,60 @@
+{
+  "error": "1",
+  "text": "success",
+  "data": [
+    {
+      "id": "3104",
+      "newsTitle": "道宣律师：圣境遇文殊",
+      "newsDate": "2017-10-26 09:27:06",
+      "category": "星座",
+      "authorName": "中国佛教网感应故事",
+      "url": "https://app.myzaker.com/news/article.php?pk=59f139eba07aec3331000001&f=suanmingdashi",
+      "pic1": "https://zkres.myzaker.com/201710/59f139eaa07aec3331000000_320.jpg",
+      "pic2": "https://zkres.myzaker.com/201710/59f047517f52e9b41d000004_320.jpg",
+      "pic3": "",
+      "picW": "500",
+      "picH": "375",
+      "pk": "59f139eba07aec3331000001",
+      "partner": "zaker",
+      "addtime": 1508995788,
+      "isopen": "1",
+      "click": "15388"
+    },
+        {
+      "id": "3097",
+      "newsTitle": "恋情不受对方家长认可 十二生肖怎么办",
+      "newsDate": "2017-10-25 16:12:01",
+      "category": "星座",
+      "authorName": "第一星座网",
+      "url": "https://app.myzaker.com/news/article.php?pk=59f047517f52e9b41d000005&f=suanmingdashi",
+      "pic1": "https://zkres.myzaker.com/201710/59f047517f52e9b41d000004_320.jpg",
+      "pic2": "https://zkres.myzaker.com/201710/59f047517f52e9b41d000004_320.jpg",
+      "pic3": "",
+      "picW": "420",
+      "picH": "280",
+      "pk": "59f047517f52e9b41d000005",
+      "partner": "zaker",
+      "addtime": 1508995785,
+      "isopen": "1",
+      "click": "15509"
+    },
+    {
+      "id": "3106",
+      "newsTitle": "弱水有三千，只需取一瓢饮",
+      "newsDate": "2017-10-26 06:20:44",
+      "category": "星座",
+      "authorName": "达真堪布博客",
+      "url": "https://app.myzaker.com/news/article.php?pk=59f10f8c1bc8e0b36f000004&f=suanmingdashi",
+      "pic1": "https://zkres.myzaker.com/201710/59f10f8b1bc8e0b36f000003_320.jpg",
+      "pic2": "https://zkres.myzaker.com/201710/59f047517f52e9b41d000004_320.jpg",
+      "pic3": "",
+      "picW": "690",
+      "picH": "515",
+      "pk": "59f10f8c1bc8e0b36f000004",
+      "partner": "zaker",
+      "addtime": 1508995785,
+      "isopen": "1",
+      "click": "18812"
+    }
+  ]
+}
