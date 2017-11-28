@@ -24,7 +24,6 @@ public class HttpRequest {
                 httpURLConnection.setRequestMethod("GET");
                 httpURLConnection.setDoInput(true);
                 int responseCode = httpURLConnection.getResponseCode();
-                Log.e("AAAAAAAAAAAA","responseCode=----->"+responseCode);
                 if (responseCode == httpURLConnection.HTTP_OK) {
                     inputStream = httpURLConnection.getInputStream();
                     bitmap = BitmapFactory.decodeStream(inputStream);
@@ -32,6 +31,7 @@ public class HttpRequest {
             }
         } catch (Exception e) {
             e.printStackTrace();
+            Log.e("EEEEEEEE","ERROE");
         }
         return bitmap;
     }

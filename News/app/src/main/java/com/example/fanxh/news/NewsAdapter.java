@@ -45,8 +45,10 @@ public class NewsAdapter extends ArrayAdapter {
         super(context, textViewResourceId, objects);
         this.mContext = context;
         this.dataList = objects;
-        Log.e("AAAAB","pic2--->"+dataList.get(0).getPic2()+"----getPic3---->"+dataList.get(0).getPic3());
-//        this.textViewResourceId = textViewResourceId;
+
+
+        try {
+
         int maxMemory = (int) Runtime.getRuntime().maxMemory();
         int cacheSize = maxMemory / 8;
         mMemoryCache = new LruCache<String, BitmapDrawable>(cacheSize) {
@@ -55,30 +57,28 @@ public class NewsAdapter extends ArrayAdapter {
                 return drawable.getBitmap().getByteCount();
             }
         };
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     @Override
     public int getCount() {
-        // TODO Auto-generated method stub
         return dataList.size();
     }
 
     @Override
     public Object getItem(int position) {
-        // TODO Auto-generated method stub
         return dataList.get(position);
     }
 
     @Override
     public long getItemId(int position) {
-        // TODO Auto-generated method stub
         return position;
     }
 
     @Override
     public int getItemViewType(int position) {
-//        return super.getItemViewType(position);
-        Log.e("AAAA","pic2--->"+dataList.get(position).getPic2()+"----getPic3---->"+dataList.get(position).getPic3());
         if (TextUtils.isEmpty(dataList.get(position).getPic2()) && TextUtils.isEmpty(dataList.get(position).getPic3())) {
             return TYPE_ONE;
         } else if (!TextUtils.isEmpty(dataList.get(position).getPic2()) && TextUtils.isEmpty(dataList.get(position).getPic3())) {
@@ -92,7 +92,7 @@ public class NewsAdapter extends ArrayAdapter {
 
     @Override
     public int getViewTypeCount() {
-        return 2;
+        return 3;
     }
 
     @NonNull
@@ -101,36 +101,18 @@ public class NewsAdapter extends ArrayAdapter {
         if (mListView == null) {
             mListView = (ListView) parent;
         }
-//        private static TextView mNewsTitle=null;
-//        private static TextView mAuthorName=null;
-//        private static ImageView mNewsPic=null ;
-//        private static ImageView mNewsPic2=null;
-//        private static ImageView mNewsPic3=null;
         DataBean dataBean = (DataBean) getItem(position);
         int type = getItemViewType(position);
-//        View view ;
         if (convertView == null) {
             switch (type) {
                 case TYPE_ONE:
                     view = LayoutInflater.from(mContext).inflate(R.layout.news_item, null);
-//                    mNewsTitle = (TextView) view.findViewById(R.id.title);
-//                    mAuthorName = (TextView) view.findViewById(R.id.author_name);
-//                    mNewsPic = (ImageView) view.findViewById(R.id.news_pic1);
                     break;
                 case TYPE_TWO:
                     view = LayoutInflater.from(mContext).inflate(R.layout.news_item_two, null);
-//                    mNewsTitle = (TextView) view.findViewById(R.id.title);
-//                    mAuthorName = (TextView) view.findViewById(R.id.author_name);
-//                    mNewsPic = (ImageView) view.findViewById(R.id.news_pic1);
-//                    mNewsPic2 = (ImageView) view.findViewById(R.id.news_pic2);
                     break;
                 case TYPE_THTEE:
                     view = LayoutInflater.from(mContext).inflate(R.layout.news_item_three, null);
-//                    mNewsTitle = (TextView) view.findViewById(R.id.title);
-//                    mAuthorName = (TextView) view.findViewById(R.id.author_name);
-//                    mNewsPic = (ImageView) view.findViewById(R.id.news_pic1);
-//                    mNewsPic2 = (ImageView) view.findViewById(R.id.news_pic2);
-//                    mNewsPic3 = (ImageView) view.findViewById(R.id.news_pic3);
                     break;
                 default:
                     break;
@@ -138,30 +120,26 @@ public class NewsAdapter extends ArrayAdapter {
         } else {
             view = convertView;
         }
-//        TextView mNewsTitle = (TextView) view.findViewById(R.id.title);
-//        TextView mAuthorName = (TextView) view.findViewById(R.id.author_name);
-//        ImageView mNewsPic = (ImageView) view.findViewById(R.id.news_pic1);
-
-//        Bitmap bitmap = HttpRequest.getImageBitmap(MURL);
-//        Log.e("AAAAAABBBBB","mNewsPic----->"+bitmap);
-//        mNewsPic.setImageBitmap(bitmap);
-//        mNewsPic.setImageResource(R.drawable.ic_launcher_background);
         switch (type) {
             case TYPE_ONE:
                 TextView mNewsTitle = (TextView) view.findViewById(R.id.title);
                 TextView mAuthorName = (TextView) view.findViewById(R.id.author_name);
                 ImageView mNewsPic = (ImageView) view.findViewById(R.id.news_pic1);
-            mNewsPic.setTag(dataBean.getPic1());
-            BitmapDrawable drawable = getBitmapFromMemoryCache(dataBean.getPic1());
-            if (drawable != null) {
-                mNewsPic.setImageDrawable(drawable);
-            } else {
-                BitmapWorkerTask task = new BitmapWorkerTask();
-                task.execute(dataBean.getPic1());
-            }
-            mNewsTitle.setText(dataBean.getNewsTitle());
-            mAuthorName.setText(dataBean.getAuthorName());
-            break;
+                mNewsPic.setTag(dataBean.getPic1());
+                BitmapDrawable drawable = getBitmapFromMemoryCache(dataBean.getPic1());
+                if (drawable != null) {
+                    mNewsPic.setImageDrawable(drawable);
+                } else {
+                    try {
+                        BitmapWorkerTask task = new BitmapWorkerTask();
+                        task.execute(dataBean.getPic1());
+                    }catch (Exception e){
+                        e.printStackTrace();
+                    }
+                }
+                mNewsTitle.setText(dataBean.getNewsTitle());
+                mAuthorName.setText(dataBean.getAuthorName());
+                break;
             case TYPE_TWO:
                 TextView mNewsTitle2 = (TextView) view.findViewById(R.id.title);
                 TextView mAuthorName2 = (TextView) view.findViewById(R.id.author_name);
@@ -219,8 +197,8 @@ public class NewsAdapter extends ArrayAdapter {
                 mNewsTitle3.setText(dataBean.getNewsTitle());
                 mAuthorName3.setText(dataBean.getAuthorName());
                 break;
-                default:
-                    break;
+            default:
+                break;
         }
         return view;
     }
@@ -245,10 +223,9 @@ public class NewsAdapter extends ArrayAdapter {
     /**
      * 异步下载图片
      */
+
     class BitmapWorkerTask extends AsyncTask<String, Void, BitmapDrawable> {
-
         String imageUrl;
-
         @Override
         protected BitmapDrawable doInBackground(String... params) {
             imageUrl = params[0];

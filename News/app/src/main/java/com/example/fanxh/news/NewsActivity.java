@@ -26,12 +26,11 @@ public class NewsActivity extends AppCompatActivity {
         if (actionBar != null){
             actionBar.hide();
         }
-        String string = JsonUtil.getJson(this,"2.txt");
+        String string = JsonUtil.getJson(this,"news.txt");
         dataBeanList1 = JsonUtil.parseJsonWithJsonObject(string);
         final NewsAdapter newsAdapter = new NewsAdapter(this,0,dataBeanList1);
         mNewsList = (ListView)findViewById(R.id.news_list);
         mNewsList.setAdapter(newsAdapter);
-//        newsAdapter.notifyDataSetChanged();
         mNewsList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
