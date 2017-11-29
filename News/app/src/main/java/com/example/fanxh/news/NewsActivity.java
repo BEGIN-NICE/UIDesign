@@ -16,7 +16,7 @@ import java.util.List;
 
 public class NewsActivity extends AppCompatActivity {
 
-    private List<DataBean>dataBeanList1 = new ArrayList<>();
+    private List<DataBean>dataBeanList = new ArrayList<>();
     private ListView mNewsList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,14 +27,14 @@ public class NewsActivity extends AppCompatActivity {
             actionBar.hide();
         }
         String string = JsonUtil.getJson(this,"news.txt");
-        dataBeanList1 = JsonUtil.parseJsonWithJsonObject(string);
-        final NewsAdapter newsAdapter = new NewsAdapter(this,0,dataBeanList1);
+        dataBeanList = JsonUtil.parseJsonWithJsonObject(string);
+        final NewsAdapter newsAdapter = new NewsAdapter(this,0,dataBeanList);
         mNewsList = (ListView)findViewById(R.id.news_list);
         mNewsList.setAdapter(newsAdapter);
         mNewsList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                DataBean dataBean = dataBeanList1.get(position);
+                DataBean dataBean = dataBeanList.get(position);
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse(dataBean.getUrl()));
                 startActivity(intent);
