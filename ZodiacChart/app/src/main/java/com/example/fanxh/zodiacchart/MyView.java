@@ -59,5 +59,11 @@ public class MyView extends View {
             canvas.rotate(5);
             canvas.drawRect(rectF, mPaint);
         }
+        canvas.rotate(4);
+        for (int i = 0;i<=270;i+=45){
+
+            canvas.drawLine(0,widthSize/3-60,0,widthSize/3-50,mPaint);
+            canvas.rotate(45);
+        }
     }
 }
