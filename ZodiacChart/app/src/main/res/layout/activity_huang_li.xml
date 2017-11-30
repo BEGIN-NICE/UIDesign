@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context="com.example.fanxh.zodiacchart.HuangLiActivity">
 
     <RelativeLayout
@@ -109,7 +109,7 @@
                     android:layout_marginTop="3dp"
                     android:text="@string/today_describe_left"
                     android:textColor="@color/colorBlack"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -146,7 +146,93 @@
                     android:layout_marginTop="13dp"
                     android:src="@drawable/fortune_dash_line" />
 
-                <RelativeLayout
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/caishen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="13dp"
+                        android:drawableLeft="@drawable/fortune_lucky_icon_money"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/guiren_direction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="13dp"
+                        android:drawableLeft="@drawable/calendar_icon_top_guiren"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/book"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="13dp"
+                        android:drawableLeft="@drawable/calendar_icon_top_book"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/dash_line"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lucky_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="13dp"
+                        android:drawableLeft="@drawable/fortune_lucky_icon_number"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/lucky_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="13dp"
+                        android:drawableLeft="@drawable/calendar_icon_top_xiao"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/guiren"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="13dp"
+                        android:drawableLeft="@drawable/calendar_icon_top_xiao"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+
+               <!-- <RelativeLayout
                     android:id="@+id/caishen_layout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -243,7 +329,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="5dp"
                         android:layout_toRightOf="@+id/wenchang_image"
-                        android:text="@string/guiren"
+                        android:text="@string/wenchang"
                         android:textColor="@color/colorBlack"
                         android:textSize="13dp" />
 
@@ -256,7 +342,7 @@
                         android:text="@string/wenchang_right"
                         android:textColor="@color/colorOrange"
                         android:textSize="14dp" />
-                </RelativeLayout>
+                </RelativeLayout>-->
 
                 <RelativeLayout
                     android:id="@+id/jixiang_number_layout"
@@ -394,66 +480,60 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp">
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
+                <ImageView
+                    android:id="@+id/yunshi_image"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginTop="15dp">
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/calendar_icon_top_guiren" />
 
-                    <ImageView
-                        android:id="@+id/yunshi_image"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:src="@drawable/calendar_icon_top_guiren" />
+                <TextView
+                    android:id="@+id/yunshi_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/yunshi_image"
+                    android:text="@string/yunshi_love"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17dp" />
 
-                    <TextView
-                        android:id="@+id/yunshi_title"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/yunshi_image"
-                        android:text="@string/yunshi_love"
-                        android:textColor="@color/colorBlack"
-                        android:textSize="17dp" />
+                <RatingBar
+                    android:id="@+id/yunshi_stars"
+                    style="@style/RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/yunshi_title"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="4" />
 
-                    <RatingBar
-                        android:id="@+id/yunshi_stars"
-                        style="@style/RatingBar"
-                        android:layout_width="wrap_content"
-                        android:layout_height="14dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/yunshi_title"
-                        android:isIndicator="true"
-                        android:numStars="5"
-                        android:rating="4" />
+                <TextView
+                    android:id="@+id/fen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/yunshi_score"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/fen"
+                    android:textColor="@color/colorGray"
+                    android:textSize="10dp" />
 
-                    <TextView
-                        android:id="@+id/fen"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBottom="@id/yunshi_score"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginBottom="3dp"
-                        android:text="@string/fen"
-                        android:textColor="@color/colorGray"
-                        android:textSize="10dp" />
-
-                    <TextView
-                        android:id="@+id/yunshi_score"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_toLeftOf="@+id/fen"
-                        android:text="@string/yunshi_love_score"
-                        android:textColor="@color/colorOrange"
-                        android:textSize="20dp" />
-                </RelativeLayout>
+                <TextView
+                    android:id="@+id/yunshi_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/fen"
+                    android:text="@string/yunshi_love_score"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -624,15 +704,17 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/colorLine"/>
+                android:background="@color/colorLine" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
                 android:background="@color/colorInterval" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/colorLine"/>
+                android:background="@color/colorLine" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -667,36 +749,33 @@
             </RelativeLayout>
 
 
-
-
-                <TextView
-                    android:id="@+id/tao_hua_yun"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical|left"
-                    android:lineSpacingExtra="3dp"
-                    android:padding="15dp"
-                    android:layout_margin="15dp"
-                    android:textSize="13dp"
-                    android:background="@drawable/calendar_fortune_bg"/>
-
-
-
-<!--            <RelativeLayout
+            <TextView
+                android:id="@+id/tao_hua_yun"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
-                android:background="@drawable/calendar_fortune_bg">
+                android:background="@drawable/calendar_fortune_bg"
+                android:gravity="center_vertical|left"
+                android:lineSpacingExtra="3dp"
+                android:padding="15dp"
+                android:textSize="13dp" />
 
-                <TextView
-                    android:id="@+id/tao_hua_yun"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:lineSpacingExtra="3dp"
-                    android:layout_margin="15dp"
-                    android:textSize="13dp" />
-            </RelativeLayout>-->
 
-       </LinearLayout>
+            <!--            <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:background="@drawable/calendar_fortune_bg">
+
+                            <TextView
+                                android:id="@+id/tao_hua_yun"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="3dp"
+                                android:layout_margin="15dp"
+                                android:textSize="13dp" />
+                        </RelativeLayout>-->
+
+        </LinearLayout>
     </ScrollView>
 </LinearLayout>

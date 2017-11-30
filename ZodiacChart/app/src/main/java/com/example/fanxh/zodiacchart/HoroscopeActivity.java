@@ -28,9 +28,13 @@ public class HoroscopeActivity extends AppCompatActivity {
         mGodsOrientation = (TextView) findViewById(R.id.gods_orientation);
         mLunarDate = (TextView) findViewById(R.id.lunar_date);
         mDing = (TextView) findViewById(R.id.ding);
-        Typeface typeface = Typeface.createFromAsset(getAssets(), "CalendarSongTi.ttf");
-        mGodsOrientation.setTypeface(typeface);
-        mLunarDate.setTypeface(typeface);
+        try {
+            Typeface typeface = Typeface.createFromAsset(getAssets(), "CalendarSongTi.ttf");
+            mGodsOrientation.setTypeface(typeface);
+            mLunarDate.setTypeface(typeface);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         mDing.setBackgroundResource(R.drawable.almanac_bg_luckytime);
         mDing.setTextColor(getResources().getColor(R.color.colorWhite));
 

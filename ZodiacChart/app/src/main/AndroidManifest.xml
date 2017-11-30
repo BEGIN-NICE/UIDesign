@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".HuangLiActivity" />
-        <activity android:name=".HoroscopeActivity"></activity>
+        <activity android:name=".HoroscopeActivity" />
+        <activity android:name=".DesignViewActivity"></activity>
     </application>
 
 </manifest>

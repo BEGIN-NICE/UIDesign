@@ -9,6 +9,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     private Button mNextActivity;
     private Button mSecondUI;
+    private Button mDesignView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, HoroscopeActivity.class);
+                startActivity(intent);
+            }
+        });
+        mDesignView = (Button)findViewById(R.id.design_view);
+        mDesignView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DesignViewActivity.class);
                 startActivity(intent);
             }
         });

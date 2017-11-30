@@ -58,8 +58,6 @@
     <string name="horoscope_yi_right">乙亥凶</string>
 
 
-
-
     <string name="horoscope_gods">诸神方位</string>
     <string name="horoscope_cai">财神-正西</string>
     <string name="horoscope_fu">福神-正南</string>
@@ -78,11 +76,6 @@
     <string name="peng_information">己不破券二比并亡酉不宴客醉坐癫狂</string>
     <string name="horoscope_xing">星宿</string>
     <string name="xing_information">东方萁水豹吉</string>
-
-
-
-
-
 
 
 </resources>
