@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/my_view"
+    android:background="@drawable/bg_myview"
     tools:context="com.example.fanxh.zodiacchart.DesignViewActivity">
 
     <ScrollView
@@ -11,13 +11,13 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <com.example.fanxh.zodiacchart.MyView
                 android:layout_width="wrap_content"
-                android:layout_height="408dp" />
+                android:layout_height="480dp" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
